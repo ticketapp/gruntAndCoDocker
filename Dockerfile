@@ -27,3 +27,5 @@ RUN npm install -g grunt-contrib-concat --save-dev
 RUN npm install -g bower --save-dev
 
 RUN  echo "{}" > package.json && npm install grunt --save-dev 
+
+RUN apt-get install -y git
