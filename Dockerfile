@@ -29,3 +29,7 @@ RUN npm install -g bower --save-dev
 RUN  echo "{}" > package.json && npm install grunt --save-dev 
 
 RUN apt-get install -y git
+
+RUN echo "alias b='npm install; bower install --save --allow-root; grunt build'" >> ~/.bashrc
+
+RUN echo "alias w='grunt watch'" >> ~/.bashrc
