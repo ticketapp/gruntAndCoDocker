@@ -32,4 +32,4 @@ RUN apt-get install -y git
 
 RUN echo "alias b='npm install; bower install --save --allow-root; grunt build'" >> ~/.bashrc
 
-RUN echo "alias w='grunt watch'" >> ~/.bashrc
+RUN echo "alias wa='grunt watch'" >> ~/.bashrc
