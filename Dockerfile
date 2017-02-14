@@ -41,3 +41,5 @@ RUN npm install -g bower --save-dev
 RUN echo "alias b='npm install; bower install --save --allow-root; grunt build'" >> ~/.bashrc
 
 RUN echo "alias wa='grunt watch'" >> ~/.bashrc
+
+RUN apt-get install -y git
